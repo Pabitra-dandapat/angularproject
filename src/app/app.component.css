@@ -1,0 +1,131 @@
+
+body
+{
+  padding: 0;
+  margin: 0;
+  background: rgb(19, 76, 161);
+  box-sizing: border-box;
+ 
+}
+.boards
+{
+  background: rgb(150, 146, 146);
+  color: white;
+}
+.boards span
+{
+   margin: 20px ;
+   display: inline;
+   font-size: 30px;
+   font-weight: 900;
+}
+.boards input
+{
+  margin: 10px;
+  outline: none;
+  border-radius: 7px;
+  border: none;
+  height: 25px;
+  
+}
+.boards input[type= "search"]
+{
+  letter-spacing: 1px;
+}
+.boards button
+{
+  background: none;
+  border: solid 3px rgb(105, 196, 161);
+  border-radius: 14px;
+  letter-spacing: 2px;
+  padding: 7px;
+  outline: none;
+  
+}
+.boards button:hover{
+   background: rgb(105, 196, 161);
+   cursor: pointer;
+}
+.things
+{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+
+.small-container {
+    width: 310px ;
+    max-width: 100%;
+    margin: 15px ;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    background: rgb(240, 235, 235);
+    border-radius: 6px;  
+  }
+h2 {
+ 
+  text-align: center;
+  margin: 10px;
+}
+  
+  .item-list {
+    border: none;
+  
+    min-height: 60px;
+    
+    border-radius: 4px;
+    overflow: hidden;
+    display: block;
+    padding: 2px;
+    border-radius: 10px;
+   
+  }
+  
+  .item-box {
+    padding: 20px 10px;
+    border-bottom: solid 5px rgb(240, 235, 235);
+    color: rgb(2, 2, 2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: rgb(255, 254, 254);
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    
+  
+    
+  }
+  
+  .cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .cdk-drag-placeholder {
+    opacity: 0;
+  }
+  
+  .cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .item-box:last-child {
+    border : none;
+  }
+  
+  .item-list.cdk-drop-list-dragging .item-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+   
